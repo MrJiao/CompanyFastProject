@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>FastProject-build</module>
+    </modules>
+    <parent>
+        <groupId>org.apel</groupId>
+        <artifactId>gaia</artifactId>
+        <version>1.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>com.jackson.company</groupId>
+    <artifactId>FastProject</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <tlevel.datax>1.0.1-SNAPSHOT</tlevel.datax>
+        <gaia>1.0.1-SNAPSHOT</gaia>
+        <gaia.version>1.0.1-SNAPSHOT</gaia.version>
+        <oracle>11.2.0.3.0</oracle>
+        <swagger>2.8.0</swagger>
+        <okhttp>3.11.0</okhttp>
+        <jdk.version>1.8</jdk.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>data-sync-db</artifactId>
+                <version>1.0.2-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.alibaba</groupId>
+                        <artifactId>druid</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-web</artifactId>
+                <version>${tlevel.datax}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-core</artifactId>
+                <version>${tlevel.datax}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>gaia-app-boot</artifactId>
+                        <groupId>org.apel</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>platform-util</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-security</artifactId>
+                <version>${tlevel.datax}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-swagger</artifactId>
+                <version>${tlevel.datax}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-ftp</artifactId>
+                <version>${tlevel.datax}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-db</artifactId>
+                <version>${tlevel.datax}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-common</artifactId>
+                <version>${tlevel.datax}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.bjhy</groupId>
+                <artifactId>tlevel-datax-real_time</artifactId>
+                <version>${tlevel.datax}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apel</groupId>
+                <artifactId>gaia-persist</artifactId>
+                <version>${gaia}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apel</groupId>
+                <artifactId>gaia-commons</artifactId>
+                <version>${gaia.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apel</groupId>
+                <artifactId>gaia-js-lib</artifactId>
+                <version>${gaia}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apel</groupId>
+                <artifactId>gaia-container-boot</artifactId>
+                <version>${gaia}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.oracle</groupId>
+                <artifactId>ojdbc14</artifactId>
+                <version>${oracle}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apel</groupId>
+                <artifactId>gaia-util</artifactId>
+                <version>${gaia}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.6</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>3.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+</project>
