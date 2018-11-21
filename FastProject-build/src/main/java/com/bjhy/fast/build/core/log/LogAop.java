@@ -2,7 +2,7 @@ package com.bjhy.fast.build.core.log;
 
 import com.bjhy.fast.build.core.domain.ControllerLog;
 import com.bjhy.fast.build.core.service.ControllerLogService;
-import com.bjhy.fast.build.security.UserDetailsUtil;
+import com.bjhy.fast.security.UserDetailsUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;

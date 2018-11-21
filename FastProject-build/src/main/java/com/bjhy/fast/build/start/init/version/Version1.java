@@ -3,12 +3,12 @@ package com.bjhy.fast.build.start.init.version;
 import com.bjhy.fast.build.start.init.core.VersionInf;
 import com.bjhy.tlevel.datax.common.Type;
 
-import com.bjhy.fast.build.security.dao.RoleRepository;
-import com.bjhy.fast.build.security.dao.SystemMenuRepository;
-import com.bjhy.fast.build.security.dao.UserInfoRepository;
-import com.bjhy.fast.build.security.domain.Role;
-import com.bjhy.fast.build.security.domain.SystemMenu;
-import com.bjhy.fast.build.security.domain.UserInfo;
+import com.bjhy.fast.security.dao.RoleRepository;
+import com.bjhy.fast.security.dao.SystemMenuRepository;
+import com.bjhy.fast.security.dao.UserInfoRepository;
+import com.bjhy.fast.security.domain.Role;
+import com.bjhy.fast.security.domain.SystemMenu;
+import com.bjhy.fast.security.domain.UserInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

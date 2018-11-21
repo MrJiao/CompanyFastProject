@@ -3,9 +3,9 @@ package com.bjhy.fast.build.web.security;
 import com.bjhy.tlevel.datax.common.utils.L;
 
 import com.bjhy.fast.build.core.log.LogIgnore;
-import com.bjhy.fast.build.security.domain.SystemMenu;
-import com.bjhy.fast.build.security.domain.UserInfo;
-import com.bjhy.fast.build.security.service.SecurityUserInfoService;
+import com.bjhy.fast.security.domain.SystemMenu;
+import com.bjhy.fast.security.domain.UserInfo;
+import com.bjhy.fast.security.service.SecurityUserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

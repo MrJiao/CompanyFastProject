@@ -2,8 +2,8 @@ package com.bjhy.fast.build.core.utils;
 
 
 
-import com.bjhy.fast.build.security.domain.UserInfo;
-import com.bjhy.fast.build.security.vo.UserInfoVo;
+import com.bjhy.fast.security.domain.UserInfo;
+import com.bjhy.fast.security.vo.UserInfoVo;
 
 import java.io.File;
 import java.util.ArrayList;

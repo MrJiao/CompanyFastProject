@@ -5,11 +5,11 @@ import com.bjhy.tlevel.datax.common.utils.BeanUtil;
 
 import com.bjhy.fast.build.core.log.LogDescribe;
 import com.bjhy.fast.build.core.log.LogIgnore;
-import com.bjhy.fast.build.security.domain.Role;
-import com.bjhy.fast.build.security.domain.UserInfo;
-import com.bjhy.fast.build.security.exception.RoleExitException;
-import com.bjhy.fast.build.security.service.RoleService;
-import com.bjhy.fast.build.security.service.SecurityUserInfoService;
+import com.bjhy.fast.security.domain.Role;
+import com.bjhy.fast.security.domain.UserInfo;
+import com.bjhy.fast.security.exception.RoleExitException;
+import com.bjhy.fast.security.service.RoleService;
+import com.bjhy.fast.security.service.SecurityUserInfoService;
 import org.apache.commons.lang3.StringUtils;
 import org.apel.gaia.commons.i18n.Message;
 import org.apel.gaia.commons.i18n.MessageUtil;

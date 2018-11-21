@@ -32,6 +32,12 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.jackson.company</groupId>
+            <artifactId>FastProject-security</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
 
         <!--web-->
         <dependency>
